@@ -1,0 +1,41 @@
+export const CREATE_COURSE = "CREATE_COURSE";
+export const LOAD_COURSES_SUCCESS = "LOAD_COURSES_SUCCESS";
+export const LOAD_PROFESSORS_SUCCESS = "LOAD_PROFESSORS_SUCCESS";
+export const CREATE_COURSE_SUCCESS = "CREATE_COURSE_SUCCESS";
+export const UPDATE_COURSE_SUCCESS = "UPDATE_COURSE_SUCCESS";
+export const BEGIN_API_CALL = "BEGIN_API_CALL";
+export const API_CALL_ERROR = "API_CALL_ERROR";
+
+// By convention, actions that end in "_SUCCESS" are assumed to have been the result of a completed
+// API call. But since we're doing an optimistic delete, we're hiding loading state.
+// So this action name deliberately omits the "_SUCCESS" suffix.
+// If it had one, our apiCallsInProgress counter would be decremented below zero
+// because we're not incrementing the number of apiCallInProgress when the delete request begins.
+export const DELETE_COURSE_OPTIMISTIC = "DELETE_COURSE_OPTIMISTIC";
+
+//Parent
+export const DELETE_PARENT_OPTIMISTIC = "DELETE_PARENT_OPTIMISTIC";
+export const LOAD_PARENTS_SUCCESS = "LOAD_PARENTS_SUCCESS";
+export const CREATE_PARENT_SUCCESS = "CREATE_PARENT_SUCCESS";
+export const UPDATE_PARENT_SUCCESS = "UPDATE_PARENT_SUCCESS";
+//Student
+export const DELETE_STUDENT_OPTIMISTIC = "DELETE_STUDENT_OPTIMISTIC";
+export const LOAD_STUDENTS_SUCCESS = "LOAD_STUDENTS_SUCCESS";
+export const LOAD_STUDENT_BY_DOCUMENTNUMBER = "LOAD_STUDENT_BY_DOCUMENTNUMBER";
+export const CREATE_STUDENT_SUCCESS = "CREATE_STUDENT_SUCCESS";
+export const UPDATE_STUDENT_SUCCESS = "UPDATE_STUDENT_SUCCESS";
+export const LOAD_DOCUMENTTYPES_SUCCESS = "LOAD_DOCUMENTTYPES_SUCCESS";
+
+export const DELETE_USER_OPTIMISTIC = "DELETE_USER_OPTIMISTIC";
+export const LOAD_USERS_SUCCESS = "LOAD_USERS_SUCCESS";
+export const CREATE_USER_SUCCESS = "CREATE_USER_SUCCESS";
+export const UPDATE_USER_SUCCESS = "UPDATE_USER_SUCCESS";
+
+//Reservation
+export const DELETE_RESERVATION_OPTIMISTIC = "DELETE_RESERVATION_OPTIMISTIC";
+export const LOAD_RESERVATIONS_SUCCESS = "LOAD_RESERVATIONS_SUCCESS";
+export const CREATE_RESERVATION_SUCCESS = "CREATE_RESERVATION_SUCCESS";
+export const UPDATE_RESERVATION_SUCCESS = "UPDATE_RESERVATION_SUCCESS";
+//types
+export const LOAD_STAGES_SUCCESS = "LOAD_STAGES_SUCCESS";
+export const LOAD_TURNS_SUCCESS = "LOAD_TURNS_SUCCESS";
